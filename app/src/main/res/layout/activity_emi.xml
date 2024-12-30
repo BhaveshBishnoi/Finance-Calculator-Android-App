@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:backgroundTint="#5E17EB"
+    android:foregroundTint="#5E17EB"
+    android:orientation="vertical"
+    android:scrollbarSize="100dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6FA"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:text="Personal Loan EMI Calculator"
+            android:textAlignment="center"
+            android:textColor="#490BB8"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Principal Amount"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            android:textColorHint="#9A0C0B0B" />
+
+        <EditText
+            android:id="@+id/emir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Interest"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            android:textColorHint="#B2191717" />
+
+        <EditText
+            android:id="@+id/emit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Time (In Months)"
+            android:inputType="text"
+            android:textColor="#673AB7"
+            android:textColorHint="#9A0E0E0E" />
+
+        <TextView
+            android:id="@+id/ans"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="35dp"
+            android:text="="
+            android:textColor="#673AB7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/Loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:onClick="EMI"
+            android:text="Calculate" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
